@@ -16,11 +16,8 @@
 
 * Link to my deployed application: https://candygarcia014.github.io/password-generator/ 
 
-* screenshot of my deployed application: ()
-
+* screenshot of my deployed application: 
 ![screenshot](Screenshot.PNG)
-
-![password generator demo](./Assets/03-javascript-homework-demo.png)
 
  
 
