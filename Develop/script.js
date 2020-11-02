@@ -13,7 +13,7 @@ function writePassword() {
     var num = "0123456789";
     var passwordText = []
     var result = []
-    var pwLength = length
+    var pwLength = Number
     upperCase = upperCase.split("")
     lowerCase = lowerCase.split("")
     specialChar = specialChar.split("")
@@ -30,31 +30,40 @@ function writePassword() {
     if (pwLength < 8 && pwLength > 128) {
         alert("Password should be between 8 and 128 characters")
     }
-    if (confirm("Do you want your password to contain letters?")) {
+    if (confirm("Do you want your password to contain upper case letters?")) {
         for (var i = 0; i < upperCase.length; i++) {
             result.push(upperCase[i])
         }
+        if (confirm("Do you want your password to contain lower case letters?")) {
+            for (var i = 0; i < lowerCase.length; i++) {
+                result.push(lowerCase[i])
+            }
+        }
     }
+    // console.log(result)
     if (confirm("do you want your password to contain numbers?")) {
         for (var i = 0; i < num.length; i++) {
             result.push(num[i])
         }
     }
+    //console.log(result)
     if (confirm("do you want your password to contain special characters?")) {
         for (var i = 0; i < specialChar.length; i++) {
             result.push(specialChar[i])
         }
 
     }
+    console.log(result)
 }
 
 function generatePassword() {
-    console.log(characterCatcher)
+    console.log(passwordText)
     var passwordText = ""
     for (var i = 0; i < pwLength; i++) {
         passwordText += characterCatcher[Math.floor(math.random() * characterCatcher.length)]
     }
     return passwordText
 }
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
