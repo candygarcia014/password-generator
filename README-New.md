@@ -18,7 +18,7 @@
 
 * screenshot of my deployed application: ()
 
-[screenshot](pwgenerator-screenshot.png)
+![screenshot](Screenshot.PNG)
 
 ![password generator demo](./Assets/03-javascript-homework-demo.png)
 
