@@ -59,18 +59,18 @@ function writePassword() {
 
     }
     console.log(result)
-}
 
-//Generate pw function 
-function generatePassword() {
-    console.log(passwordText)
-    var passwordText = ""
-    for (var i = 0; i < pwLength; i++) {
-        passwordText += characterCatcher[Math.floor(math.random() * characterCatcher.length)]
+    //Generate pw function 
+    function generatePassword() {
+        console.log(passwordText)
+        var passwordText = ""
+        for (var i = 0; i < pwLength; i++) {
+            passwordText += characterCatcher[Math.floor(math.random() * characterCatcher.length)]
+        }
+        return passwordText
     }
-    return passwordText
-}
 
+}
 // function generatePassword() {
 //     var password = generatePassword();
 //     var passwordText = document.querySelector("#password");
