@@ -75,11 +75,4 @@ function generatePassword(characterCatcher, pwLength) {
     var passwordText = document.querySelector("#password");
     passwordText.value = password;
 
-    // return passwordText
-    // alert(passwordText "")
 }
-
-// function generatePassword() {
-//     var password = generatePassword();
-//    
-// }
