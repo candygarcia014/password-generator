@@ -9,14 +9,14 @@ generateBtn.addEventListener("click", writePassword);
 // Write password to the #password input
 function writePassword() {
     var password = generatePassword();
-    var generatePassword = document.querySelector("#password");
+    //var generatePassword = document.querySelector("#password");
     var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     var lowerCase = "abcdefghijklmnopqrstuvwxyz";
     var specialChar = "!')(*+,-.$/:;<=>%&?@[#\]^_`{|}~";
     var num = "0123456789";
     var passwordText = []
     var result = []
-    var pwLength = length
+        //var pwLength = length
     upperCase = upperCase.split("")
     lowerCase = lowerCase.split("")
     specialChar = specialChar.split("")
@@ -60,23 +60,26 @@ function writePassword() {
 
     }
     console.log(result)
+    generatePassword(result, pwLength)
+}
 
-    //Generate pw function 
-    function generatePassword() {
-        console.log(passwordText)
-        var passwordText = ""
-        for (var i = 0; i < pwLength; i++) {
-            passwordText += characterCatcher[Math.floor(math.random() * characterCatcher.length)]
-        }
-        return passwordText
-            // alert(passwordText "")
+//Generate pw function 
+function generatePassword(characterCatcher, pwLength) {
+
+    var password = ""
+    for (var i = 0; i < pwLength; i++) {
+        console.log(characterCatcher[Math.floor(Math.random() * characterCatcher.length)])
+        password += characterCatcher[Math.floor(Math.random() * characterCatcher.length)]
     }
+    //console.log(passwordText)
+    var passwordText = document.querySelector("#password");
+    passwordText.value = password;
 
+    // return passwordText
+    // alert(passwordText "")
 }
 
 // function generatePassword() {
 //     var password = generatePassword();
-//     var passwordText = document.querySelector("#password");
-
-//     passwordText.value = password;
+//    
 // }
