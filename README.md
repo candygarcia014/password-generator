@@ -23,8 +23,6 @@
 * screenshot of my deployed application: 
 ![screenshot](Screenshot.PNG)
 
- 
-
 * I appreiate your feedback :) 
  
 
